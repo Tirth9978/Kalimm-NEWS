@@ -1,0 +1,278 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: "Poppins", sans-serif;
+}
+
+.nav {
+     background-color: rgb(0, 0, 0);
+     /* padding: 15px; */
+     height: 60px;
+     display: grid;
+     grid-template-columns: 60px 360px 535px 325px;
+     position: sticky;
+     top: 0;
+     /* This is required for sticky to work */
+     z-index: 10;
+     /* Ensure it stays above other content */
+}
+
+.Search-box {
+     text-align: center;
+     border-radius: 6px;
+     border-style: none;
+     height: 17px;
+     margin: auto;
+     grid-column: 2/3;
+     height: 25px;
+     width: 300px;
+     transition: transform 0.4s;
+}
+
+.Search-box::placeholder {
+     text-align: center;
+}
+
+.Search-box:hover {
+     box-shadow: 0px 0px 12px 3px rgb(185, 183, 183);
+     transform: scale(1.1);
+}
+
+
+ul {
+     display: flex;
+     list-style-type: none;
+     margin: auto;
+     /* margin-left: 12px; */
+}
+
+li {
+     margin-left: 72px;
+     transition: transform 0.4s;
+}
+
+a {
+     text-decoration: none;
+     color: white;
+     font-size: 17px;
+     margin-left: -15px;
+}
+
+li:hover {
+     text-shadow: 0px 0px 10px rgb(185, 183, 183);
+     transform: scale(1.2);
+}
+
+.buttoms {
+     margin: auto;
+     display: flex;
+     gap: 40px;
+}
+
+
+.bu {
+     width: 76px;
+     height: 30px;
+     font-size: 15px;
+     transition: transform 0.4s;
+     border-radius: 6px;
+     border-style: none;
+}
+
+.bu:hover {
+     transform: scale(1.1);
+     background-color: black;
+     color: white;
+     box-shadow: 0px 0px 12px 3px rgb(185, 183, 183);
+}
+
+.box-2 {
+     display: grid;
+     grid-template-rows: 465px;
+     grid-template-columns: 905px 335px;
+     margin: 12px;
+     gap: 12px;
+}
+
+
+.Welcome {
+     font-family: "Poppins", sans-serif;
+     font-size: 61px;
+     /* margin: 71px; */
+     margin-top: 64px;
+     margin-left: 89px;
+}
+
+.Welcome-1 {
+     margin-bottom: 12px;
+     margin-left: 89px;
+     font-size: 18px;
+
+     font-family: "Poppins", sans-serif;
+}
+
+.Login-SignUP {
+     margin-left: 89px;
+     font-size: 21px;
+     margin-top: 63px;
+
+}
+
+.bu-1 {
+     width: 110px;
+     height: 47px;
+     font-size: 15px;
+     color: white;
+     background-color: black;
+     transition: transform 0.4s;
+     border-radius: 6px;
+     border-style: none;
+     margin-left: 89px;
+     margin-top: 41px;
+     font-size: 21px;
+}
+
+.bu-1:hover {
+     transform: scale(1.1);
+
+     box-shadow: 0px 0px 12px 3px rgb(0, 0, 0);
+}
+
+.Overfolw {
+     overflow-y: scroll;
+     /* border: 1px solid black;
+     border-radius: px; */
+}
+
+.buref {
+     margin-left: 19px;
+}
+
+.Tranding {
+     margin-top: 26px;
+     margin-left: 32px;
+     font-size: 40px;
+}
+
+.T1 {
+     color: black;
+     margin-left: 23px;
+     background-color: rgb(240, 238, 238);
+     padding: 12px;
+     border-radius: 8px;
+
+}
+
+.T2 {
+     color: black;
+     margin-left: 23px;
+     padding: 12px;
+     border-radius: 8px;
+     margin-top: -1px;
+}
+
+.inbox {
+     text-decoration: underline;
+}
+
+.box-3 {
+     background-color: black;
+     margin: 0;
+}
+
+.footer {
+     background-color: #111;
+     color: #eee;
+     padding: 50px 20px 30px;
+     font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     max-width: 1200px;
+     margin: auto;
+     gap: 40px;
+}
+
+.footer-column {
+     flex: 1;
+     min-width: 220px;
+}
+
+.footer-column h3 {
+     font-size: 20px;
+     margin-bottom: 15px;
+     color: #fff;
+}
+
+.footer-column ul {
+     list-style: none;
+     padding: 0;
+}
+
+.footer-column ul li {
+     margin: 10px 0;
+}
+
+.footer-column ul li a {
+     color: #bbb;
+     text-decoration: none;
+     transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+     color: #fff;
+}
+
+.social-icons a {
+     margin-right: 10px;
+     display: inline-block;
+     transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+     transform: scale(1.2);
+}
+
+.footer-column input[type="email"] {
+     padding: 10px;
+     width: 90%;
+     max-width: 250px;
+     margin-bottom: 10px;
+     border: none;
+     border-radius: 4px;
+     font-size: 14px;
+}
+
+.footer-column button {
+     padding: 10px 20px;
+     background-color: #fff;
+     color: #111;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: bold;
+     transition: background-color 0.3s ease;
+}
+
+.footer-column button:hover {
+     background-color: #ddd;
+}
+
+.footer-bottom {
+     text-align: center;
+     margin-top: 30px;
+     font-size: 14px;
+     color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+     .footer-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+     }
+}
